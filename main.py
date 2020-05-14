@@ -1,10 +1,10 @@
 import asyncio
-import pyTelegramBotAPI
+import parser
 from aiogram import Bot, Dispatcher, executor
 from config import BOT_TOKEN
 from loader import bot, storage
 
-
+import telebot
 async def on_shutdown(dp):
     await bot.close()
     await storage.close()
