@@ -1,4 +1,4 @@
-from main import bot, dp
+from bot import bot, dp
 from aiogram.types import Message
 from config import admin_id
 from aiogram.dispatcher.filters import Command, Text
@@ -17,7 +17,7 @@ from loader import dp
 from states.test import Test
 from states.test2 import Test2
 from states.test3 import Test3
-from main import bot
+from bot import bot
 
 async def send_to_message(dp):
     await bot.send_message(chat_id=admin_id, text="Ехала", )
@@ -27,7 +27,7 @@ async def send_to_message(dp):
 async def echo(message: Message):
     text = f"Привет,{message.from_user.first_name}\nРад с тобой познакомиться!\n Нажми на /menu чтобы выбрать нужную категорию(или воспользуйтесь командами)"
     await message.answer(text=text)
-    bot.polling()
+
 
 
 

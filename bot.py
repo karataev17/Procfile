@@ -3,7 +3,7 @@ import parser
 from aiogram import Bot, Dispatcher, executor
 from config import BOT_TOKEN
 from loader import bot, storage
-
+BOT_TOKEN="1243697551:AAEAzgjjGt3EynR2R9cgMdIWSTCPrOzF104"
 import telebot
 async def on_shutdown(dp):
     await bot.close()
